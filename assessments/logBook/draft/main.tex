@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+
+%\newcommand{\newWeekEntry}[1]{\def\weekName{#1} , \input{weekEntry}}
+\newcommand{\parag}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\subparag}[1]{\subparagraph{#1}\mbox{}\\}
+
+\begin{document}
+
+\input{coverSheet.tex}
+\input{summary.tex}
+\input{tableOfContent.tex}
+
+\section{January}
+\input{weekEntry.tex}
+\section{February}
+\section{March}
+\section{April}
+\section{May}
+\section{June}
+\section{July}
+\section{August}
+
+\input{references.tex}
+
+\end{document}
