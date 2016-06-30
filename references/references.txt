@@ -1,0 +1,48 @@
+Honeypots:
+==========
+
+[1] L. Spitzner (2003). The Honeynet Project: Trapping the Hackers. [Online]. Available from: IEEE Xplore.  http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1193207 [Accessed 5 March 2016].
+
+[2] F. Pouget, M. Dacier. Honeypot-based Forensics. [Online]. Available from: Eurecom. http://www.eurecom.fr/en/publication/1417/download/ce-pougfa-040523.pdf [Accessed 5 March 2016].
+
+[3] D. Ramsbrock, R. Berthier, M. Cukier (2007). Profiling Attacker Behavior Following SSH Compromises. [Online]. Available from: IEEE Xplore. http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4272962 [Accessed 5 March 2016].
+
+[4] G. Salles-Loustau, R. Berthier, E. Collange, B. Sobesto, M. Cukier (2011). Characterizing Attackers and Attacks: An Empirical Study. [Online].  Available from: IEEE Xplore. http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6133079. [Accessed 5 March 2016].
+
+[5] R. Berthier, J. Arjona, M. Cukier (2009). Analyzing the process of installing rogue software. [Online]. Available from: IEEE Xplore. http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5270293. [Accessed 5 March 2016].
+
+[6] J. P. Owens (2008). A Study of Passwords and Methods Used in Brute-Force SSH Attacks. [Online]. http://people.clarkson.edu/~owensjp/pubs/Owens_MS_thesis.pdf. [Accessed 5 March 2016].
+
+[7] E. Alata, V. Nicomette, M. Kaaniche, M. Dacier, M. Herrb (2006). Lessons learned from the deployment of a high-interaction honeypot.[Online]. http://homepages.laas.fr/kaaniche/documents/Alata2006/alata-EDCC6.pdf. [Accessed 5 March 2016].
+
+[8] Valli, C., Rabadia, P., Woodward, A. and Research Online (2015). Patterns and patter - an investigation into SSH activity using Kippo Honeypots. [Online]. Available from: http://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1128&context=adf [Accessed 19 June 2016].
+
+[9] Kheirkhah, E., Mehdi, S., Amin, P., Sistani, H. A. and Acharya, H. (2013). An experimental study of SSH attacks by using Honeypot decoys. [Online]. Available from: http://www.indjst.org/index.php/indjst/article/download/43618/35034 [Accessed 19 June 2016].
+
+[10] Koniaris, I., Papadimitriou, G. and Nicopolitidis, P. (2004). Analysis and visualization of SSH attacks using honeypots. [Online]. IEEE. Available from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6624967&tag=1 [Accessed 19 June 2016].
+
+[11] Krawetz, N. (2004). Anti-honeypot technology. [Online]. IEEE. Available from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1264861 [Accessed 19 June 2016].
+
+
+Malwares:
+=========
+
+[1] LukášˇdurfinaJakub, Křoustek, P. and Zemek (n.d.). Psyb0t Malware: A step-by-step Decompilation case study. [Online]. Available from: https://www.computer.org/csdl/proceedings/wcre/2013/9999/00/06671321.pdf [Accessed 19 June 2016].
+
+[2] Pavelčeleda, R., Krejčí, J., Vykopal, M. and Drašar (n.d.). Embedded Malware – an analysis of the Chuck Norris Botnet. [Online]. Available from: http://is.muni.cz/repo/904554/chuck-norris-botnet-analysis-paper.pdf [Accessed 19 June 2016].
+
+[3] Wagner, M., Fischer, F., Luh, R., Haberson, A., Rind, A., Keim, D. A. and Aigner, W. (2015). A survey of visualization systems for Malware analysis. [Online]. Available from: http://mc.fhstp.ac.at/sites/default/files/publications/wagner_2015_eurovis_star_malwarevis_postprint_reduced.pdf [Accessed 19 June 2016].
+
+[4] Gandotra, E., Bansal, D. and Sofat, S. (2014). Malware analysis and classification: A survey. [Online]. Scientific Research Publishing, Inc, Available from: http://file.scirp.org/pdf/JIS_2014040110394271.pdf [Accessed 19 June 2016].
+
+[5] Yakdan, K., Dechand, S., Gerhards-Padilla, E. and Smith, M. (n.d.). Helping Johnny to analyze Malware A Usability-Optimized Decompiler and Malware analysis user study. Available from: http://www.ieee-security.org/TC/SP2016/papers/0824a158.pdf [Accessed 19 June 2016].
+
+[6] Yakdan, K., Eschweiler, S. and Gerhards-Padilla, E. (n.d.). REcompile: A decompilation framework for static analysis of binaries. [Online]. IEEE. Available from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6703690 [Accessed 19 June 2016].
+
+[7] Yakdan, K., Eschweiler, S. and Gerhards-Padilla, E. (n.d.). REcompile: A decompilation framework for static analysis of binaries. [Online]. IEEE. Available from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6703690 [Accessed 19 June 2016].
+
+[8] Yan, W., Zhang, Z. and Ansari, N. (2008). Revealing packed Malware. [Online]. IEEE. Available from: http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4639028 [Accessed 19 June 2016].
+
+[9] An Introduction to Linux-based malware (n.d.). [Online]. SANS Institute. Available from: https://www.sans.org/reading-room/whitepapers/malicious/introduction-linux-based-malware-36097 [Accessed 19 June 2016].
+
+[10] Monnappa, K. A. (n.d.). Automating Linux Malware Analysis Using Limon Sandbox. [Online]. Available from: https://www.blackhat.com/docs/eu-15/materials/eu-15-KA-Automating-Linux-Malware-Analysis-Using-Limon-Sandbox-wp.pdf [Accessed 19 June 2016].
