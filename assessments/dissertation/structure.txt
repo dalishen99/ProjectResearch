@@ -1,0 +1,39 @@
+Acknowledgements
+
+Abstract
+
+1. Introduction
+
+2. Literature review
+
+3. Related work 	
+
+4. Methodology
+
+5. Implementation and configuration
+	5.1. Honeypot
+		5.1.1. Requirements
+		5.1.2. Server configuration
+		5.1.3. Cowrie honeypot
+		5.1.4. Kippograph
+
+	5.2. Malware analysis
+		5.2.1. Cuckoo and Limon Sandbox
+		5.2.2. Malware string analyzer
+		5.2.3. Virus total
+
+6. Analysis and results
+	6.1. Attacks overview
+	6.2. Authentication attempts
+	6.3. Downloaded scripts
+	6.4. Malware binaries analysis
+
+7. Conclusion
+
+8. Future Research
+
+9. Bibliography
+
+10. Appendices
+
+

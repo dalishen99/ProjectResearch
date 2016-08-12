@@ -1,0 +1,26 @@
+Results of my research:
+The analysis of readable strings is useful in order to understand how works a malware without running it (static analysis). However, this could be done only if binaries are not packed. Moreover, if a binary is stripped then we could not be able to get readable strings such as the name of variables and functions symbols.
+
+During my research, I divided strings that I found in 11 categories:
+
+    IP addresses: it is possible to find hard coded IP addresses, with sometimes a port number (e.g. 93.174.89.143:23)
+
+    Identifiers: some binaries contains strings which look like username/passwords, probably to perform a password guessing attack on the compromised server.
+
+    Command lines:  there are some strings that contain readable shell command line that could be executed by the malware.
+
+    Url and files: it is possible to find strings that contain URL allowing to download a file, probably to update the malware remotely. Those URLs are often written into a command line string.
+    Path: some binaries contains strings with the absolute path to a Linux binary or a file (e.g. /bin/sh)
+    Symbols: when a binary is not stripped it is possible to get more specific information such as the name of used functions.
+
+    Format string: this type of string consists of building string dynamically (e.g. %d.%d.%d.%d for an IP address).
+ 
+    Display message: some readable message contains error, success or helps message. Those string can help to understand functionalities of the malware.
+
+    Sections: it is possible to get name of the program sections (e.g. .text, .data, .bss, ...).
+
+    Random strings: some extracted string contain random character without sense.
+
+    Other: Some other strings contain readable information but I was not able to determine with they are useful and where they come from.
+
+Finally, it is important to notice that a malware's developer can also introduce incorrect readable strings in order to hide the correct functioning of its malware.
