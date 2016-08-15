@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
-import sys, getpass
-import MySQLdb
-import re
-import wget
-import os
+import sys, getpass, MySQLdb
+import re, wget, os
 
 if len(sys.argv) != 2:
     sys.exit(2)
