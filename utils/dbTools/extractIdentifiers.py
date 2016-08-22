@@ -1,7 +1,17 @@
 #!/usr/bin/env python
-
 import sys, getpass, MySQLdb
 import re, wget, os
+
+"""
+    This script is used to extract Identifiers (username/passwords) from the
+    cowrie database (Honeypot) and create two files storing all identifiers
+    and all passwords separately. It is useful to extract identifiers from
+    binary strings.
+
+    Usage:
+    ------
+    python extarctMalware.py DATABASE_USERNAME
+"""
 
 if len(sys.argv) != 2:
     sys.exit(2)
