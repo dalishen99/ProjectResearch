@@ -1,5 +1,13 @@
 \subsection{Honeypot}
 
+Folder path: ./Databases/Honeypot/
+
+\paragraph{}
+This SQL database is used to store dynamically all events linked to the honeypot such as
+connection attempts and Linux command lines used. A dump of this database is also available
+in the corpus (./Databases/Honeypot/cowrie\_23-08-2016.sql).
+Figure 1 is a screenshot of all tables present in this database. Moreover, Figures 2 to 9
+show an extract of 10 rows for each table and its number of rows.
 
 \importpng{./screenshot/db_cowrie/db_tables.png}{All tables}{1}
 \importpng{./screenshot/db_cowrie/table_auth.png}{auth table}{0.6}
@@ -16,7 +24,22 @@
 
 \subsection{Malware strings analyzer}
 
+Folder path: ./Databases/Malware\_Strings\_Analyzer/
 
+\paragraph{}
+The results.db database (located in ./Databases/Malware\_strings\_Analyzer/results.db), is an SQLite database
+generated automatically at the end of the execution of the msa.py script. This database
+consists of storing the results of the strings analysis of an ELF binary. A table for each
+analysis will be created and its name is formatted as following:
+\begin{center}
+[IP/URL where the script has been downloaded] - [Original script name] - [Date of the analysis]
+\end{center}
+All of those tables are composed of 3 columns. The first one is the "string" that
+has been analyzed. The second contains the extracted part of this string and the last one
+determines the type of the extracted string.
+Figure 10 is a screenshot of a results.db generated after four strings analysis.
+Moreover, Figures 11 to 22 show two strings, extracted from those four tested malware binaries,
+for each possible string type.
 
 \importpng{./screenshot/db_sqlite/table_list.png}{All tables}{1}
 \importpng{./screenshot/db_sqlite/cmd.png}{Bash command lines strings}{1}

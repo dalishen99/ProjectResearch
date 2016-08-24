@@ -1,3 +1,39 @@
 \subsection{Database management tools}
 
+Folder path: ./Scripts/Databases\_Tools/
+
+\paragraph{dbDump.sh}
+This shell script is used to extract the remote cowrie database (honeypot) and copy it
+locally to be re-used.
+
+\paragraph{extractIdentifiers.py}
+This python script is used to extract Identifiers (username/passwords) from the cowrie
+database (Honeypot) and create two files storing all identifiers and all passwords
+separately. It is useful to extract identifiers from binary strings.
+
+\paragraph{extractMalware.py}
+This python script is used to extract URLs from the cowrie database (Honeypot) and
+download all malicious files stored on it. It is useful to automatically download
+malware and then analyze them.
+
 \subsection{Malware Strings Analyzer (MSA)}
+
+Folder path: ./Scripts/Malware\_Strings\_Analyzer/
+
+\paragraph{README.md}
+This file contains all information about this tool such as how to install and run it.
+
+\paragraph{requirements.lst}
+This file is used to install python dependencies in order to run the MSA tool.
+
+\paragraph{msa.py}
+This python file is the entry point of the Malware Strings Analyzer script.
+
+\paragraph{db/}
+This folder contains the database containing results of the MSA analysis.
+
+\paragraph{doc/}
+This folder contains the technical documentation of the MSA tool.
+
+\paragraph{lib/}
+This folder contains the python source code of this tool.
