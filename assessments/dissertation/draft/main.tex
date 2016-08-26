@@ -1,0 +1,42 @@
+\documentclass{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[parfill]{parskip}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\newcommand\importsection[2]{
+ \section{#1}
+ \input{#2}
+}
+
+\newcommand\importimg[3]{
+  \begin{figure}[H]
+  \begin{center}
+  \includegraphics[scale=#3]{#1}
+  \end{center}
+  \caption{#2}
+  \label{#2}
+  \end{figure}
+}
+
+
+\begin{document}
+
+\input{./structure/coverSheet.tex}
+\input{./structure/summary.tex}
+\input{./structure/tableOfContent.tex}
+
+\importsection{Introduction}{./sections/introduction.tex} % 913
+
+\end{document}

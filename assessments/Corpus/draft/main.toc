@@ -1,0 +1,26 @@
+\contentsline {paragraph}{}{1}{section*.1}
+\contentsline {section}{\numberline {1}Malware}{3}{section.1}
+\contentsline {paragraph}{}{3}{section*.3}
+\contentsline {section}{\numberline {2}Scripts}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Database management tools}{3}{subsection.2.1}
+\contentsline {paragraph}{dbDump.sh}{3}{section*.4}
+\contentsline {paragraph}{extractIdentifiers.py}{3}{section*.5}
+\contentsline {paragraph}{extractMalware.py}{3}{section*.6}
+\contentsline {subsection}{\numberline {2.2}Malware Strings Analyzer (MSA)}{3}{subsection.2.2}
+\contentsline {paragraph}{README.md}{3}{section*.7}
+\contentsline {paragraph}{requirements.lst}{3}{section*.8}
+\contentsline {paragraph}{msa.py}{3}{section*.9}
+\contentsline {paragraph}{db/}{3}{section*.10}
+\contentsline {paragraph}{doc/}{3}{section*.11}
+\contentsline {paragraph}{lib/}{3}{section*.12}
+\contentsline {section}{\numberline {3}Databases}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Honeypot}{3}{subsection.3.1}
+\contentsline {paragraph}{}{4}{section*.13}
+\contentsline {subsection}{\numberline {3.2}Malware strings analyzer}{8}{subsection.3.2}
+\contentsline {paragraph}{}{8}{section*.14}
+\contentsline {section}{\numberline {4}Identifiers}{12}{section.4}
+\contentsline {paragraph}{}{12}{section*.15}
+\contentsline {subsection}{\numberline {4.1}Usernames}{12}{subsection.4.1}
+\contentsline {paragraph}{}{12}{section*.16}
+\contentsline {subsection}{\numberline {4.2}Passwords}{13}{subsection.4.2}
+\contentsline {paragraph}{}{13}{section*.17}
