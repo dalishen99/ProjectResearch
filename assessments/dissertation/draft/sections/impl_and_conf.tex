@@ -101,9 +101,42 @@ information. Indeed, this is a software and despite the availability of the code
 GitHub the authors cannot ensure that any vulnerabilities will be found.
 
 
-\subsubsection{Kippograph and data vizualisation} % 400 
+\subsubsection{Kippograph and data vizualisation} % 369 
 
 \paragraph{}
+
+An SSH honeypot generate a large amount of data. These data may refer to all information
+related to SSH connection attempts such as identifiers used and IP address used, but also
+to all events when the attackers access to a shell on our server.
+In the case of cowrie and Kippo Honeypots, all data are stored on a MySQL database automatically.
+This database is structured in 8 tables (auth, clients, downloads, input, keyfingerprints,
+sensors, sessions and ttylog). However, due to the quantity of attacks that can be received
+on an SSH honeypots, it quickly became apparent that read information from a database were a 
+difficult task.
+Consequently, I decided to put in place a graphical interface allowing to extract and format
+useful data contains on this database.
+
+Moreover, its important to notice that Cowrie apply the same database structure as Kippo.
+Hence, due to the large community of Kippo, I have been able to use Kippograph (v1.5.1), a
+tool from their toolbox.
+This tool is a web interface using the Libchart PHP chart drawing library that gathers multiple
+libraries in order to build maps and graphs from given data. Consequently, this tool allowed me
+to perform a daily analysis of the actual state of attacks performed against my server.
+Indeed, a simple GET request to one of the 6 available pages (kippo-graph, kippo-input,
+kippo-playlog, kippo-ip, kippo-geo and graph gallery), return several graphs and information
+such as the actual number of login attempts and distinct source IP addresses, easy to understand
+and interpret.
+
+The installation is also simple and fast to implement. First of all, Kippograph is a web interface
+consequently a webserver such as Apache or Nginx has to be installed on the server. Once, it
+has been installed all of the source code, located on GitHub has to be downloaded on the web server
+localization (by default /var/www/html). Then, the configuration file has to be edited to 
+allow it to get data from the cowrie MySQL database.
+Finally, this website has to be protected with all basic security rules such as a strong
+password to avoid everyone to access to this information remotely. More details about
+the installation and configuration can be found easily on internet.
+
+
 
 \subsection{Malware string analyzer} % 100
 
