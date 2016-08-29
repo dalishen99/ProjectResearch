@@ -31,12 +31,22 @@
 }
 
 
-\begin{document}
+\begin{document} % 2038
 
-\input{./structure/coverSheet.tex}
-\input{./structure/summary.tex}
-\input{./structure/tableOfContent.tex}
+\input{./structure/cover_sheet.tex}
+\input{./structure/abstract.tex} %
+\input{./structure/acknowledgements.tex} % 
+\input{./structure/table_of_content.tex}
+\input{./structure/list_figures.tex}
 
 \importsection{Introduction}{./sections/introduction.tex} % 913
+\importsection{Literature review and related work}{./sections/literature.tex} % 1125
+\importsection{Methodology}{./sections/methodology.tex} % 
+\importsection{Implementation and configuration}{./sections/impl_and_conf.tex} % 
+\importsection{Analysis and results}{./sections/analysis_and_rslt.tex} % 
+\importsection{Future research}{./sections/future_research.tex} % 
+\importsection{Concluding discussion}{./sections/concluding_disc.tex} % 
+\importsection{Bibliography}{./sections/bibliography.tex} % 
+\importsection{Appendices}{./sections/appendices.tex} % 
 
 \end{document}

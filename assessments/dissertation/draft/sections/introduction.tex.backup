@@ -22,7 +22,7 @@ However, all of these communication and stored data can be more or fewer sensiti
 communication between two people, bank account information, password, and other credentials data
  have a value that is interesting to steal or alter by an ill-intentioned person.
 
-\subsection{Goals of the project} % 230
+\subsection{Goals of the project} % 232
 
 \paragraph{}
 
@@ -40,13 +40,13 @@ Moreover, a honeypot makes a server accessible remotely through a fake SSH conne
 Hence, this tool provides a way to allow malicious connection on its server while restricting
 the access to the machine.
 
-During 6 months, our honeypot server received around 72500 login attempts with 62 percent 
+During 6 months, our honeypot server received around 72500 SSH login attempts with 62 percent 
 of successful connection. Those attacks were from 2550 distinct IP addresses and from a large
 number of different countries all around the world. Following these attacks multiple data 
 such as command lines executed by attackers, scripts and malware downloaded have allowed 
 me to perform a more detailed analysis of attackers behaviours and their motivations.
  
-\subsection{Contribution} % 321
+\subsection{Contribution} % 323
 
 \paragraph{}
 
@@ -63,30 +63,30 @@ evolving. Indeed, security researchers and developers are continuing to look at 
 newest vulnerabilities and try to patch them (CVE). Then, attackers find new attacks scenario
 in order to bypass new security detection and protection tools and so on.
 However, security researchers have to put sensors in order to collect data and analyze security
-issues. Consequently, all along this project research a databases containing all attacks informations
-has been created in order to update and improve knownledge of current Linux server attacks.
+issues. Consequently, all along this project research, a databases containing all attacks information
+has been created in order to update and improve knowledge of current Linux server attacks.
 
-Furthermore, because of the large number of ELF malicious collected binaries I performed a static
-analysis of them by analyzing strings. In fact, when malwares are not packed or stripped multiple
- hardcoded strings can be extracted from them. During the analysis of these strings, 10 differents
- types were observed such as IP addresses, URLs or readble english messages. In order to automate 
- there extraction, I developped a python script that automatically extract strings from a given
+Furthermore, because of a large number of ELF malicious collected binaries I performed a static
+analysis of them by analyzing strings. In fact, when malware are not packed or stripped multiple
+ hard coded strings can be extracted from them. During the analysis of these strings, 10 differents
+ types were observed such as IP addresses, URLs or readable english messages. In order to automate 
+ their extraction, I developed a python script that automatically extract strings from a given
  malware, extract, sort and store them into a database. The aim of this could be to generate 
- a large dataset from strings contained in malware to be applied through a datamining algorithm
+ a large dataset from strings contained in malware to be applied through a data mining algorithm
  in order to perform a pre-analysis of a malware.
 
 \subsection{Structure of the disseration} % 108
 
 \paragraph{}
 
-In order to understand the functionning of Honeypots and their objectives, a short review of
+In order to understand the functioning of Honeypots and their objectives, a short review of
 the existing literature about similar project already performed is exposed first. Then, the 
 methodology of my research will be explained.
 
 The technical implementation and configuration of the server, the honeypot and tools used to
-store and read collected data will be examined in details. In the same way the developpment 
+store and read collected data will be examined in details. In the same way, the development 
 and usage of the malware strings analyzer will be shown.
 
-A concluding disscussion will summerize this analysis and results will be described in the
-same section. Finally, in a futur research part will provide a way to a possible future development
+A concluding discussion will summarize this analysis and results will be described in the
+same section. Finally, in a future research part will provide a way to a possible future development
 and reflexion.
