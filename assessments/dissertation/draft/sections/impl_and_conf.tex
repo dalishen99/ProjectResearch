@@ -195,21 +195,60 @@ Finally, it is important to notice that a malware's developer can also introduce
 readable strings in order to hide the correct functioning of its malware.
 
 
-\subsubsection{Strings extraction} % 53
+\subsubsection{Strings extraction} % 656
 
 \paragraph{}
 
-%- Why extract them ?
-%- For each grp (regex, command line, dict) define How MSA extract them.
-%- Final MSA conclusion
-
-Malware string analyzer tool is used to extract strings in order to find patterns and link 
-between those information to perform a pre-analysis of a given binary file. This database
-contining sorted string by binaries could be used to determine a percentage of chance that
+Malware string analyser tool is used to extract strings in order to find patterns and link 
+between those information and to perform a pre-analysis of a given binary file.
+The generated database contains a table for each binary analysis with all strings sorted
+by their type. Those data could be used to determine a percentage of chance that
 a binary file is or not a malware.
 
+In order to extract these strings, I determine basic criteria representing a string. Indeed,
+a binary file is a basically a file containing bits (0 or 1). By grouping them into group of
+8 bits we obtain a byte. This byte can contain values between 0 to 255, and consequently, it
+can represent a character from the ASCII (American Standard Code for Information Interchange)
+table. This table is a standard of character encoding and contains all characters necessary
+to write in English. Based on it I decide to extract all readable character from this
+list: \ \textbackslash : , [ ] \textless \textgreater \% \$ \_  and also the following: space, A to Z (in upper and lower case).
+Hence, the malware string analyser script starts by opening a file and search for strings from 
+the previously listed characters with a size of minimum 4 characters, one after the other.
+The method to extract these data is called a regular expression which is a specific syntax 
+that allow to match it with multiple corresponding strings.
 
+This first step enables the script to collect all readable strings. Afterwards, a specific 
+python function is applied for each string categories.
+In order to code these sorting functions, I used the following 4 technics:
+\begin{enumerate}
+  \item Regular expression: as during the extraction of strings from a binary, some string
+  are defined as belonging to categories by using a specific regular expression.
+  Indeed, the categories IP addresses, URLs, Path, Format string and Sections are extracted
+  from raw strings by formatting a specific regular expression.
+  \item Specific python libraries: the "Display message" categories has been built by extracting
+  strings with a python library called "Enchant". Indeed, it provides function that allows determining if a given word is or not an English word. Based on that I was able to split all
+  words from strings and compute a percentage of English words in a sentence and finally
+  supposed that this string can be a message written by the malware developer. Moreover, 
+  the "command line" categories have been build by using the "spawn" function from the distutils
+  python library in order to determine if a given is a known Linux command line or not.
+  \item Linux command lines: When python libraries were insufficient to sort strings into specific categories I executed Linux command lines through the malware strings analyser
+  script. Indeed it is the case for the Symbols and command lines categories. Indeed, command 
+  lines and symbols strings found by executing and then parsing the output of respectively
+  the "command" and "readelf" Linux command lines.
+  \item Dictionary lists: the Identifiers category is an only based on real user inputs.
+  Consequently, strings from this category have been extracted by using two lists of usernames
+  and passwords builds by using connection attempts data from Cowrie database.
+\end{enumerate}
 
+By using those four technics the malware strings analyser is able to create a table containing
+for each raw strings, the interesting part of it and its type (name of the associated category).
+For all other strings that don't match to a known category, they are noted as the "other" category.
+Furthermore, it is important to notice that the malware string analyser execute all of these 
+sorting function in a specific order. Indeed, each function browse all extracted raw strings
+and remove from the list each string detected as belonging to a known categories.
+Consequently, an optimise sequence has been built to obtain more reliable results.
+For more information, the code of these sorting function is stored in the parser.py python
+file in available on the malware string analyser GitHub.
 
 \subsubsection{Virus total analysis} % 400
 
@@ -219,3 +258,4 @@ a binary file is or not a malware.
 %- Their API
 %- Some strings are interesting to analyze with it
 %- Implementation on MSA
+

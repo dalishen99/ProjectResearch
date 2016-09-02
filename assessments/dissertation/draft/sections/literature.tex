@@ -1,0 +1,220 @@
+\subsection{Honeypots} %51
+
+\paragraph{}
+
+In this section, we will review articles concerning Honeypots, a technique allowing security
+researcher to analyses attacks on Linux server. First of all, we will see articles that
+achieve an overview of honeypot technology. Then, we will examine articles performing case
+of studies where authors analyze attacks through a honeypot system.
+
+\subsubsection{Overview} % 290
+
+\paragraph{}
+
+This sub-section present a review of an article called "The Honeynet Project: Trapping
+the Hackers" presenting an overview of honeypot systems installed on Linux machines.
+
+This paper presents the honeynet project, a security research organization composed of
+international security professionals. The purpose of this organization is to analyze the
+black-hat community’s attacks by examining their tools, tactics and more generally their
+behaviors. Based on this willingness to collect data from attacks and learn from them they
+decided to create a network, also called honeynets, in order to perform this task.
+A honeynet is basically a type of honeypot which consists of putting in place a system
+(without any production value and that doesn’t contain any sensitive data) designed to be
+attacked and/or compromised. They can be used by an organization to improve its security 
+(production honeypots) or by the researcher for gathering information on attackers 
+(research honeypots). However, authors of this article underline that in all cases of usage,
+a honeypot cannot replace security technologies because of the risk to contain vulnerabilities
+that can be exploited. Finally, honeynets are research honeypot that doesn't emulate any
+services, but it implements real systems with “hidden” software allowing to manage and
+capture data from attacks. Consequently, the risk of this type of honeypot is that attacks
+have to be limited to the tested environment and don’t impact to any other systems
+(data control). But it also consists to ensure that data from attacks can be detected and
+captured even if they are obfuscated or encrypted (data capture). An improvement for this
+paper could have been to perform a case of study of a honeynet in a real case scenario and
+detail more precisely what data can be captured and how to interpret them.
+
+\subsubsection{Case of studies} % 24
+
+This sub-section present review of two articles that put in place Honeypots system in order
+to collect data from remote attacks on Linux machines. 
+
+\paragraph{Attackers profiles and behaviors} % 270
+
+In this part, we will see an article called "Analyzing the process of installing
+rogue software " with an analysis of their results of their Honeypots’ gathered data,
+focused on attackers’ behavior and profiles.
+
+This paper has been written in order to report results of an experiment performed to
+understand and analyze malicious behavior following a remote Linux server attack. In order 
+to realize this analysis, authors of this article have implemented four honeypots.
+Those honeypots are four Linux target computer using SSH with a simple password, easy to 
+find for an attacker. Moreover, that machine also contains monitoring software such as a
+modified OpenSSH server, syslog-ng, and strace to gather a maximum of data during a 
+potential malicious access to the computer.
+By using this system authors have collected a large amount of data and choose to divide
+them by using two concepts. The first one is called “session” and define all distinct SSH
+interaction between an attacker and one of their honeypot. The other one called “action”
+corresponds to a sequence of command line execute by an attacker to do a specific task such
+as gathering information or install malicious programs. Furthermore, those honeypots were
+configured to record all network traffic and consequently, authors were able to collect
+malware downloaded by attackers on compromised computers. Consequently, they decide to
+classify them in categories corresponding to their types such as IRCBots, Rootkit, and
+Flooder. This classification has been realized at 50\% by using VirtusTotal and the 50\%
+remaining percent by a manual identification using their source code. However, this paper
+doesn’t provide more details about the manual malware reversing.
+
+\paragraph{Analysis of collected malware} % 283
+
+In this part, we will review an article called "Characterizing Attackers and Attacks: An
+Empirical Study " with an analysis of their results of their Honeypots’
+gathered data that also performed an analysis of downloaded malwares.
+
+This paper consists of an analysis of collected data from SSH honeypots configured with weak
+usernames and passwords, intended to be found by attackers using brute force attacks.
+Authors of this article decided to use an SSH honeypot called “Kojoney SSH honeypot” in its
+version 0.0.4.2 and all data accumulated during this experiment were stored in a central
+database.
+By using data stored in this database, they were able to perform an analysis of two main
+aspects of a Linux server attack. First of all, authors of this articles performed a general
+overview of attackers’ behavior by analyzing gathered data from their honeypots. These parts
+consists of determining where come from attacks (by using geographic location of IP addresses),
+what are the most common username/password combination, what are the OS used by the attackers
+and what is the global activity of attempted connection on the SSH ports (ratio successful
+and failed authentication by their source IP). The second asset aspect concern the activity
+inside the Honeypot after a successful connection on the SSH port. In this part, authors were
+able to determine favorite’s commands used by attackers but also collect malware downloaded
+by them. After a more detail analysis of that malware they authors retrieve their
+“antivirus names”, a platform which is necessary to run them and sometimes botnets information
+(channels, username, password,…).
+Although, that the analysis of gathered data was detailed authors doesn’t explain what are
+the steps used to perform all of their malware analysis.
+
+\subsection{Malware} % 23
+
+\paragraph{}
+
+In this section, we will review articles concerning malware, malicious software which are
+used by attackers to compromised machines and perform actions remotely.
+
+\subsubsection{Overview} % 252
+
+\paragraph{}
+
+This sub-section present a review of an article called "Introduction Linux based malware",
+presenting an overview of malicious softwares used by attackers.
+
+The aim of this paper is the analysis of malware on Linux operating system. Indeed, as
+explained by the authors, Linux systems are particularly vulnerable to malicious software
+because of their minimal defenses against them. Moreover, those systems are increasingly
+used in particular in IoT (“Internet of Things”) embedded devices and servers. In this paper
+malware are defined as “Code used to perform malicious actions”. Moreover, authors underline
+that malware needs to exploit a vulnerability in order to compromise a machine. This
+article also specifies that malicious programs can embed, in many cases, several functions
+such as propagation mechanisms and command and control functions. In addition, authors 
+define the notion of the payload as a code to exploit a particular vulnerability, generally
+present on malicious programs in order to infect the targeted system.  
+In order to reduce the number of malware attacks, several systems can be put in place to
+filter traffic to and from the machine to block and/or detect malware. For instance, web
+application firewall (WAF) configured as an HTTP reverse proxy can protect a web server
+from potential attacks. In the same way, network-based monitoring programs such as SNORT
+are necessary to assure a minimal protection of a system.
+However, this article could be improved by describing malware classification technics
+in order to report and monitor in the best manner potential malware attacks on its Linux
+system.
+
+\subsubsection{Case of study} % 252
+
+\paragraph{}
+
+This sub-section present review of an article called "Psyb0t Malware: A step-by-step
+Decompilation case study " that performed an analysis of a known malicious software
+called Psyb0t. 
+
+The authors of this paper perform an analysis of the malware PsyB0t by using a decompilation
+technique which consists of retrieving a readable code based on the machine code of a
+binary. However, usage of decompilation tools on malware is a challenging task. Indeed,
+malware doesn’t respect application’s standards in order to be complex to reverse engineer.
+For instance, a malware has usually stripped symbols, its code is obfuscated and can
+contain polymorphic code. Moreover, malware targets multiple platforms
+and consequently can be compiled for each of them. During the analysis of the PsyB0t
+malware, authors were able to unpack it by using UPX tool. Then, they process the whole
+executable to retrieve strings (printable characters that terminated by a zero byte ‘\\0’)
+and some symbols by analyzing data sections of the binary.  Next, authors used the address
+of the program’s main by using its internal computer-specific database or using a heuristic
+detection. Based on that they were able to create a control-flow graph that examines all 
+branch instructions to recognize conditional and unconditional branches, functions calls
+and returns from functions. At this steps the assembly code contains many redundant 
+instructions, consequently, authors performed optimizations such as detecting multiple 
+instructions that correspond to a known function and replaces them by the function name.
+Finally, the last step is to use the produced input of the last step to produce code in the
+specified language syntax (C or Python like). By analyzing the code authors were able to 
+detect functionalities of this malware (DDoS, brute-force, downloading of files,…) and much
+other useful information.
+Finally, this paper produces a complete analysis of the PsyB0t malware, however, it would 
+have been interesting to perform an overview of decompilation tools and justify their 
+choice to use a retargetable decompiler that is being developed within the Lissom project.
+
+\subsubsection{Analysis methods} % 20
+
+This sub-section present review of articles that examine methods in order to perform 
+analysis of malicious softwares by security researchers.
+
+\paragraph{Static and dynamic analysis} % 284
+
+In this part, we will review an article called "Automating Linux Malware Analysis Using
+Limon Sandbox ", concerning static and dynamic reverse engineering methods allowing 
+security researcher to analyze malwares.
+
+This paper focuses on the presentation of Limon Sandbox, an automating Linux Malware
+analysis tool developed by Monnappa K A. This sandbox, written in Python, allows the user
+to automatically collect, analyze, and generate reports containing information of processed
+malware. Moreover, this software aggregate knew malware analysis tools such as YARA, 
+VirusTotal, and the Volatility memory forensics framework. Limon sandbox performs three 
+common types of malware analysis. First of all, a static analysis of the malware is
+performed without executing the malware. This step can able the user to learn multiple
+useful information about the malware such as the file type, its cryptographic hash, Strings
+embedded within the file, obfuscation methods,… Then, a dynamic analysis is performed.
+This step consists of executing the malware sample in a safe environment (a virtual machine
+without any personal data) and where it is possible to monitor as it runs. By using these
+technics a security researcher will be able to get more information which would otherwise
+be  impossible to gather with a static analysis such as process, file system and network
+activity. Next, Limon sandbox allows users to realize a memory analysis of the previously
+ran virtual machine. This step allows users to extracting forensics information such as 
+running processes, network connections, loaded modules, API Hooking,…
+Finally, these tools generate a report in text format that contains all previously
+collected information. This paper provides a complete explanation of Limon Sandbox tool,
+however, it might be interesting to detail how can be interpreted results generate by the
+report.
+
+
+\paragraph{Unpacking} % 309
+
+In this part, we will review an article called "Revealing Packed Malware ", concerning 
+packing method that malicious softwares developers used to bypass antivirus detection. 
+
+The starting point of this article is that during the past few year malware threats have
+increased significantly. In order to protect users against this threats multiple company’s
+developed antivirus software to detect and block malicious programs that try to compromise
+a computer. However, malware authors use packers in order to evade their detection by
+antivirus. The author defines a packer as a “binary tools that instigate code obfuscation”.
+Currently, modern malware can completely bypass personal firewalls and antivirus scanners by
+implementing this technic. A malware can use a packer software in order to compress and encrypt
+itself. Then, when the packed files are loaded into the memories it is able to restore the
+original executable and run its malicious part. Consequently, antivirus that tries to match
+the signature of the packed malware with the known virus does not detect any risk.
+Packers can be classified into four categories:
+
+\begin{enumerate}
+  \item Compressor: that shrink file size with little or no anti-unpacking tricks (i.e. Upack UPX).
+  \item Crypter: that encrypt and obfuscate the original executable and prevent to be unpacked without any compression (i.e. Yoda’s crypter).
+  \item Protectors: that combine features from compressors and crypters (i.e. Armadillo).
+  \item Bundlers: that pack a software package of multiple executable and data files into a single bundled executable file (i.e. PEBundle).
+\end{enumerate}
+
+In order to answer to this threat of packed malware, security researchers and antivirus
+editor use unpacking technics to inspect the original executable signature. One manual
+technics is to use debugger tools such as Ollydbg. However, automate packers detection
+exists and are usually used by antivirus that develops static unpackers. This type of tool
+consists of dedicated routines to decompress and decrypt executable packed by specific
+packers without executing the suspicious programs.

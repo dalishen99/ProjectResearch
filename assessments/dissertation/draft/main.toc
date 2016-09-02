@@ -11,34 +11,50 @@
 \contentsline {subsection}{\numberline {1.4}Structure of the disseration}{6}{subsection.1.4}
 \contentsline {paragraph}{}{6}{section*.8}
 \contentsline {section}{\numberline {2}Literature review and related work}{6}{section.2}
-\contentsline {section}{\numberline {3}Methodology}{6}{section.3}
-\contentsline {section}{\numberline {4}Implementation and configuration}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}Honeypots}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {2.1}Honeypots}{6}{subsection.2.1}
 \contentsline {paragraph}{}{6}{section*.9}
-\contentsline {subsubsection}{\numberline {4.1.1}Honeypots overview}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Overview}{6}{subsubsection.2.1.1}
 \contentsline {paragraph}{}{6}{section*.10}
-\contentsline {subsubsection}{\numberline {4.1.2}Cowrie and its configuration}{7}{subsubsection.4.1.2}
-\contentsline {paragraph}{}{7}{section*.11}
-\contentsline {subsubsection}{\numberline {4.1.3}Kippograph and data vizualisation}{8}{subsubsection.4.1.3}
-\contentsline {paragraph}{}{8}{section*.12}
-\contentsline {subsection}{\numberline {4.2}Malware string analyzer}{8}{subsection.4.2}
-\contentsline {paragraph}{}{8}{section*.13}
-\contentsline {subsubsection}{\numberline {4.2.1}Strings categories}{8}{subsubsection.4.2.1}
-\contentsline {paragraph}{}{8}{section*.14}
-\contentsline {subsubsection}{\numberline {4.2.2}Strings extraction}{9}{subsubsection.4.2.2}
-\contentsline {paragraph}{}{9}{section*.15}
-\contentsline {subsubsection}{\numberline {4.2.3}Virus total analysis}{9}{subsubsection.4.2.3}
-\contentsline {paragraph}{}{9}{section*.16}
-\contentsline {section}{\numberline {5}Analysis and results}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Attacks overview}{9}{subsection.5.1}
-\contentsline {paragraph}{}{9}{section*.17}
-\contentsline {subsection}{\numberline {5.2}Authentication attempts}{9}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {2.1.2}Case of studies}{6}{subsubsection.2.1.2}
+\contentsline {paragraph}{Attackers profiles and behaviors}{7}{section*.11}
+\contentsline {paragraph}{Analysis of collected malware}{7}{section*.12}
+\contentsline {subsection}{\numberline {2.2}Malware}{7}{subsection.2.2}
+\contentsline {paragraph}{}{7}{section*.13}
+\contentsline {subsubsection}{\numberline {2.2.1}Overview}{7}{subsubsection.2.2.1}
+\contentsline {paragraph}{}{7}{section*.14}
+\contentsline {subsubsection}{\numberline {2.2.2}Case of study}{8}{subsubsection.2.2.2}
+\contentsline {paragraph}{}{8}{section*.15}
+\contentsline {subsubsection}{\numberline {2.2.3}Analysis methods}{8}{subsubsection.2.2.3}
+\contentsline {paragraph}{Static and dynamic analysis}{8}{section*.16}
+\contentsline {paragraph}{Unpacking}{9}{section*.17}
+\contentsline {section}{\numberline {3}Methodology}{9}{section.3}
+\contentsline {section}{\numberline {4}Implementation and configuration}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Honeypots}{9}{subsection.4.1}
 \contentsline {paragraph}{}{9}{section*.18}
-\contentsline {subsection}{\numberline {5.3}Malicious downloads}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {4.1.1}Honeypots overview}{9}{subsubsection.4.1.1}
 \contentsline {paragraph}{}{9}{section*.19}
-\contentsline {subsection}{\numberline {5.4}Malware binaries analysis}{9}{subsection.5.4}
-\contentsline {paragraph}{}{9}{section*.20}
-\contentsline {section}{\numberline {6}Future research}{10}{section.6}
-\contentsline {section}{\numberline {7}Concluding discussion}{10}{section.7}
-\contentsline {section}{\numberline {8}Bibliography}{10}{section.8}
-\contentsline {section}{\numberline {9}Appendices}{10}{section.9}
+\contentsline {subsubsection}{\numberline {4.1.2}Cowrie and its configuration}{10}{subsubsection.4.1.2}
+\contentsline {paragraph}{}{10}{section*.20}
+\contentsline {subsubsection}{\numberline {4.1.3}Kippograph and data vizualisation}{11}{subsubsection.4.1.3}
+\contentsline {paragraph}{}{11}{section*.21}
+\contentsline {subsection}{\numberline {4.2}Malware string analyzer}{11}{subsection.4.2}
+\contentsline {paragraph}{}{11}{section*.22}
+\contentsline {subsubsection}{\numberline {4.2.1}Strings categories}{11}{subsubsection.4.2.1}
+\contentsline {paragraph}{}{11}{section*.23}
+\contentsline {subsubsection}{\numberline {4.2.2}Strings extraction}{12}{subsubsection.4.2.2}
+\contentsline {paragraph}{}{12}{section*.24}
+\contentsline {subsubsection}{\numberline {4.2.3}Virus total analysis}{13}{subsubsection.4.2.3}
+\contentsline {paragraph}{}{13}{section*.25}
+\contentsline {section}{\numberline {5}Analysis and results}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Attacks overview}{13}{subsection.5.1}
+\contentsline {paragraph}{}{13}{section*.26}
+\contentsline {subsection}{\numberline {5.2}Authentication attempts}{13}{subsection.5.2}
+\contentsline {paragraph}{}{13}{section*.27}
+\contentsline {subsection}{\numberline {5.3}Malicious downloads}{13}{subsection.5.3}
+\contentsline {paragraph}{}{13}{section*.28}
+\contentsline {subsection}{\numberline {5.4}Malware binaries analysis}{13}{subsection.5.4}
+\contentsline {paragraph}{}{13}{section*.29}
+\contentsline {section}{\numberline {6}Future research}{13}{section.6}
+\contentsline {section}{\numberline {7}Concluding discussion}{13}{section.7}
+\contentsline {section}{\numberline {8}Bibliography}{13}{section.8}
+\contentsline {section}{\numberline {9}Appendices}{13}{section.9}
