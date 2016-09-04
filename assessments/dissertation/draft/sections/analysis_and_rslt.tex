@@ -1,15 +1,130 @@
 \subsection{Attacks overview}
 
-\paragraph{}
+\paragraph{} % 419
+
+The Cowrie honeypot has been put in place the 16th March 2016 and will continue to run
+until the end of the dissertation, the 12th September 2016. During this period a number
+of 82388 SSH login attempts have been recorded. Those unauthorised connections were detected
+as being executed from 2706 distinct source IP addresses. However, some of those IP addresses
+have been more active than others. Indeed, 20\% of all of those connections have been performed
+by 10 distinct IP addresses. Moreover, attacks from these 10 IP addresses were from a different
+part of the world such as China, United States, France, Japan and Republic of Korea.
+Hence, this list of country is finally the top five of connections per country during this
+period of attacks on the honeypot.
+
+Furthermore, the cowrie honeypot has been also able to determine the version and type of the
+SSH connection library and tool use to initiate and SSH connection on our server.
+Hence, we can see that attackers use mostly the SSH-2.0 libssh in multiple version such as
+the 1.6.0 or 1.4.3. These libraries can be used in multiple operating systems such as
+Linux and Windows. In the same way, the honeypot has detected that in the top 10 of ssh clients
+the Putty software has been used. This tool originally developed for Windows is now available
+on Linux systems. Consequently, this information cannot be reused to determine the operating
+system of the attackers I had hoped.
+
+Kippo graph has also collected all shell inputs written by attackers once they were connected.
+Concerning this post-compromise part, a total of 60023 commands has been inputted with
+only 1011 distinct commands. Those data are really interesting because the top 10 of most
+commonly used commands represent 49\% of all detected inputs. The first command in this
+ranking is "mkdir /tmp/.xs/" which consists of creating a hidden directory into the temporary directory of the targeted Linux system. This command has been used a total of 10875 times,
+consequently, we can easily suppose that this has been executed by a bot. This time of script
+consists of automating the execution of given command lines. In the same way, we can see that
+the top 5 of failed command, which are all invalid shell command lines, represent a total
+of 10834 commands. Consequently, it is difficult to believe that a human attacker has been
+able to make this amount of mistakes. It is more likely that this has been performed by a
+script containing an error.
 
 \subsection{Authentication attempts}
 
-\paragraph{}
+\paragraph{} % 324
+
+On the 82388 attackers SSH login attempts recorded, 66\% of them were considered as 
+successful connection because a full shell access was granted to them. This step of 
+connection attempts on our SSH server can be considered as a brute force attack. Indeed,
+attackers through their scripts tried successively a list of common usernames and passwords
+in order to access the server remotely.
+
+This part has been really interesting to analyse because the cowrie honeypot as collected
+and stored all of those identifiers in its database. Those data have allowed the malware
+strings analyser to extract known identifiers from hard coded strings on malware binaries.
+Moreover, these data confirm relevance to use complex passwords other than simple common
+strings such as "admin", "root" or "12345". Indeed these last 3 passwords are the top 3 of 
+tested passwords on the SSH server. In the same way, usernames are also important to choose,
+indeed we can see that attackers try default usernames (and also default passwords) from
+known networks devices such as "git", "oracle" and "postgres", which correspond to known
+tools and databases.
+
+Finally, we can observe, that the brute force attack here consists to use a short list of known 
+identifiers and not try to modify character by character in order to find the correct username/
+password. Indeed, attackers only try a fixed number of identifiers by IP addresses before achieving
+to access to our SSH server. Consequently, we can easily suppose that attackers only try
+to access to a server with weak authentication identifiers standards and change to another if 
+usernames and passwords are not in their dictionaries. This allows attackers to browse all
+public addresses one by one and testing in case of an SSH port open all of their passwords.
+This attack is really simple, however, the probability to obtain an access to a server by this
+the technique is not low because of the large range of public IP addresses available.
 
 \subsection{Malicious downloads}
 
-\paragraph{}
+\paragraph{} % 299
+
+Once attackers were logged on the server through SSH, a common task was to download what we
+can call a malware deployment script. Indeed, attackers usually download a shell script by
+using mostly the "wget" command line, which is used to get a content from a given URL, in our
+case a script. The advantage of this script is that it could be run on every Linux server 
+without downloading or installing additionals packages.
+Then, the attackers run this shell script that will download binaries with the wget command,
+grant execution rules to the binary by using the "chmod" command line and run it. This sequence
+of command is re-executed for each compiled version of the malware.
+
+This way to compromised a Linux is surprisingly really simple. Indeed, once the script is 
+downloaded it will download and run each malware, compiled for most common processor architecture
+in order to be able to correctly run. However, the script does not try to get more information
+of the system in order to download and run the appropriate malware.
+
+All of these downloaded versions of malware were those that I chose to analyse with the 
+malware strings analyser script. I decided to re-download them manually from each 
+malware deployment scripts downloaded by attackers on my server. I had to modify these
+script shell manually to only keep the downloading part. However, I was not able to 
+directly perform this task just after the attack because of the random hour when those events
+occurred. Consequently, when I try to re-download all binaries from attackers scripts some URLs
+pointing to binary to download had expired.
+This shows us that attackers have multiple servers used to host their malware and deployment
+scripts, but their usage expired probably in order to avoid to be easily tracked.
 
 \subsection{Malware binaries analysis}
 
-\paragraph{}
+\paragraph{} % 437
+
+During the entire period of the project research, I have collected a large sample of malware
+binary. All of them were known malware and were usually the same. Indeed, the majority of them
+were detected as the malware called "GayFgt". This has been possible to be detected by using
+the Virus Total option of the malware strings analyser script.
+
+Furthermore, the larger part of the analysis was not focused on a full static or dynamic 
+analysis of the malware as usual. Indeed, I decided to investigate on the content of strings
+hard coded in those malware binaries.
+First of all, it is important to recall that malware can be packed, which consists of encrypting a the malware. Then, once it is executed the malware will decrypt its code itself dynamically
+and run normally. The current version of the malware strings analyser can detect that it has
+been packed but it will abort the execution and it does not try to unpack it with known
+unpacking techniques (for instance UPX packing method). In the same way, some collected binaries
+were stripped which results to loose strings containing symbols information about the malware.
+As for the packing issue, the first version of the malware string analyser will abort its analysis
+in the case of strip malware.
+
+Concerning the analysis of not stripped and packed malware, the malware strings analyser has
+been able to extract some useful information about each malware. I have been able
+to collect some other URLs and IP addresses stored in this malware.
+Indeed, found URLs were used to download the new version of the malware from a remote server.
+This has been confirmed by using the Virus Total option of the malware strings analyser which
+analysed each URLs found and confirmed that those URLs were known as storing malicious content.
+Furthermore, IP addresses found have been detected has remote command and control server by
+using the same Virus Total option of the malware strings analyser tool.
+
+Finally, other interesting categories were the potential displayed message and format strings.
+Indeed, each of them contains strings that explicitly talk about TCP and UDP Flooding, followed
+by a format string making think of an IP address. This and other strings resembling a list
+of remote commands and error message, suggests that these malware were connected to a 
+remote command and control server in order to perform DDoS attacks with TCP and UPD packets
+against a given targeted IP address. Some specific research concerning the "GayFgt" malware
+have confirmed that the DDoS attacks was one of its functionality and confirmed my assumption
+by using only a static string analysis.

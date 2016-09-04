@@ -1,0 +1,41 @@
+\paragraph{}
+
+In this paper, we presented the usage and the installation of an SSH honeypot. As we have 
+seen this tool allow to easily collect basics attacks on Linux server quickly without
+using a lot of resources. Indeed, only the cost is the server which is currently not really
+expensive especially if we choose a Virtual machine as a server.
+However, it is important to notice that honeypot is a known technique by attackers and
+given the fact that honeypots are software it is impossible to be sure that they are safe
+to deploy on a network or on a server containing sensitive data. That is why I choose the
+Cowrie honeypot which is a maintained project with an available code source which reduces 
+the risk of vulnerability, even it is impossible to be sure that there is no security hole
+on it.
+
+By using this honeypot I have been able to analyse and understand attackers behaviours that
+attack Linux Server through the SSH port. I was mainly surprise of the simplicity of their
+attack scenario. Indeed, some basic security standard can avoid the totality of intrusions
+that only apply a basic brute force attack, with login attempts by using most commonly used
+usernames and passwords. First of all, it is possible to change default usernames and choose
+strong passwords with alphanumerics characters in upper and lower case associate to symbols.
+Moreover, it is possible to install services on the server such as fail2ban, which consists
+of blocking after a configured number of fail login attempts. Finally, it could also be a good
+practice to change the SSH port, initially port 22 to another.
+
+I have also been able to collect and analyse a sample of malware currently used by attackers.
+Based on their number I could not be able to perform a specific analysis for each of them.
+Consequently, I started to use Cuckoo malware analysis framework, however, this tool was
+mainly focused on Windows malware analysis. Despite the usage a GitHub project that 
+improvement Cuckoo in order to analyse Linux malware, I was not able to configure it correctly.
+Hence, I used Limon another malware analysis tool but focused on Linux malware. I applied
+it on the first collected malware, but the quantity of generated data was to large, due
+to its static and dynamic analysis. However, in its report, I found interesting to analyse
+extracted strings.
+Based on those strings I developed the malware strings analyser tool with the goal to be 
+re-used in order to find patterns on those strings that can be crossed to a data mining 
+algorithm. This could improve the malware pre-analysis techniques currently used.
+
+Finally, in the way as the HoneyNets project, all of the collected data are aimed to update
+known attackers techniques and improve knowledge about Linux server security in order
+to generate adapted security protection against those specific attacks.
+Indeed, this project contributes to the infinite race between attackers and security researchers,
+in which attackers are still one step ahead of us.
