@@ -8,6 +8,19 @@
 \usepackage{hyperref}
 \usepackage[parfill]{parskip}
 \usepackage{enumitem}
+\usepackage{url}
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\makeatletter
+\renewcommand\listoffigures{%
+    \@starttoc{lof}%
+}
+\renewcommand\tableofcontents{%
+    \@starttoc{toc}%
+}
+\makeatother
+
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -32,11 +45,12 @@
 }
 
 
-\begin{document} % 8645
+
+\begin{document} % 8861
 
 \input{./structure/cover_sheet.tex}
-\input{./structure/abstract.tex} %
-\input{./structure/acknowledgements.tex} % 
+\input{./structure/abstract.tex} % 166
+\input{./structure/acknowledgements.tex} % 55 
 \input{./structure/table_of_content.tex}
 \input{./structure/list_figures.tex}
 
@@ -47,6 +61,9 @@
 \importsection{Future research}{./sections/future_research.tex} % 424
 \importsection{Concluding discussion}{./sections/concluding_disc.tex} % 502
 \importsection{Bibliography}{./sections/bibliography.tex}  
-\importsection{Appendices}{./sections/appendices.tex}  
+\importsection{Appendices}{./sections/appendices.tex} 
+
+%\importimg{./images/test.png}{Test}{0.8}
+%\cite{anintroductiontolinuxbasedmalware}
 
 \end{document}
