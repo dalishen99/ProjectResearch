@@ -7,10 +7,13 @@ until the end of the dissertation, the 12th September 2016. During this period a
 of 82388 SSH login attempts have been recorded. Those unauthorised connections were detected
 as being executed from 2706 distinct source IP addresses. However, some of those IP addresses
 have been more active than others. Indeed, 20\% of all of those connections have been performed
-by 10 distinct IP addresses. Moreover, attacks from these 10 IP addresses were from a different
-part of the world such as China, United States, France, Japan and Republic of Korea.
+by 10 distinct IP addresses (see Figure 4). Moreover, attacks from these 10 IP addresses were from a different
+part of the world such as China, United States, France, Japan and Republic of Korea (see Figure 5).
 Hence, this list of country is finally the top five of connections per country during this
 period of attacks on the honeypot.
+
+\importimg{./images/connections_per_ip.png}{Number of connections per unique IP (TOP 10) - Kippograph}{0.8}
+\importimg{./images/connections_per_country_pie.png}{Number of connections per country - Kippograph}{0.8}
 
 Furthermore, the cowrie honeypot has been also able to determine the version and type of the
 SSH connection library and tool use to initiate and SSH connection on our server.
@@ -24,7 +27,7 @@ system of the attackers I had hoped.
 Kippo graph has also collected all shell inputs written by attackers once they were connected.
 Concerning this post-compromise part, a total of 60023 commands has been inputted with
 only 1011 distinct commands. Those data are really interesting because the top 10 of most
-commonly used commands represent 49\% of all detected inputs. The first command in this
+commonly used commands represent 49\% of all detected inputs (see Figure 6). The first command in this
 ranking is "mkdir /tmp/.xs/" which consists of creating a hidden directory into the temporary directory of the targeted Linux system. This command has been used a total of 10875 times,
 consequently, we can easily suppose that this has been executed by a bot. This time of script
 consists of automating the execution of given command lines. In the same way, we can see that
@@ -33,15 +36,20 @@ of 10834 commands. Consequently, it is difficult to believe that a human attacke
 able to make this amount of mistakes. It is more likely that this has been performed by a
 script containing an error.
 
+\importimg{./images/top10_overall_input.png}{Top 10 input (overall) - Kippograph}{0.8}
+
+
 \subsection{Authentication attempts}
 
 \paragraph{} % 324
 
 On the 82388 attackers SSH login attempts recorded, 66\% of them were considered as 
-successful connection because a full shell access was granted to them. This step of 
+successful connection because a full shell access was granted to them (see Figure 7). This step of 
 connection attempts on our SSH server can be considered as a brute force attack. Indeed,
 attackers through their scripts tried successively a list of common usernames and passwords
 in order to access the server remotely.
+
+\importimg{./images/success_ratio.png}{Overall success ratio - Kippograph}{0.8}
 
 This part has been really interesting to analyse because the cowrie honeypot as collected
 and stored all of those identifiers in its database. Those data have allowed the malware
@@ -51,7 +59,9 @@ strings such as "admin", "root" or "12345". Indeed these last 3 passwords are th
 tested passwords on the SSH server. In the same way, usernames are also important to choose,
 indeed we can see that attackers try default usernames (and also default passwords) from
 known networks devices such as "git", "oracle" and "postgres", which correspond to known
-tools and databases.
+tools and databases (see Figure 8).
+
+\importimg{./images/top10_combinations_pie.png}{Top 10 username-password combinations - Kippograph}{0.8}
 
 Finally, we can observe, that the brute force attack here consists to use a short list of known 
 identifiers and not try to modify character by character in order to find the correct username/
@@ -98,7 +108,9 @@ scripts, but their usage expired probably in order to avoid to be easily tracked
 During the entire period of the project research, I have collected a large sample of malware
 binary. All of them were known malware and were usually the same. Indeed, the majority of them
 were detected as the malware called "GayFgt". This has been possible to be detected by using
-the Virus Total option of the malware strings analyser script.
+the Virus Total option of the malware strings analyser script (see Figure 9).
+
+\importimg{./images/msa_processing.png}{Positive malicious file output - Malware Strings Analyzer}{0.8}
 
 Furthermore, the larger part of the analysis was not focused on a full static or dynamic 
 analysis of the malware as usual. Indeed, I decided to investigate on the content of strings
@@ -116,9 +128,12 @@ been able to extract some useful information about each malware. I have been abl
 to collect some other URLs and IP addresses stored in this malware.
 Indeed, found URLs were used to download the new version of the malware from a remote server.
 This has been confirmed by using the Virus Total option of the malware strings analyser which
-analysed each URLs found and confirmed that those URLs were known as storing malicious content.
+analysed each URLs found and confirmed that those URLs were known as storing malicious content
+(see Figure 10).
 Furthermore, IP addresses found have been detected has remote command and control server by
 using the same Virus Total option of the malware strings analyser tool.
+
+\importimg{./images/msa_vt_ip.png}{Positive malicious IP address output - Malware Strings Analyzer}{0.5}
 
 Finally, other interesting categories were the potential displayed message and format strings.
 Indeed, each of them contains strings that explicitly talk about TCP and UDP Flooding, followed

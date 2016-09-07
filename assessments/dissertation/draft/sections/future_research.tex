@@ -1,9 +1,9 @@
 \paragraph{}
 
-As shown all along the previous part, the Cowrie honeypot allowed me to collect a sample
-of malware, currently used to compromised and manipulate remotely infected Linux servers.
+As shown in the previous sections, the Cowrie honeypot allowed me to collect a sample
+of malware, currently used to compromise and manipulate remotely infected Linux servers.
 Based on these gathered malware binaries, I have been able to develop a script,
-called "malware strings analyser" (MSA), and I use it to extract, sort and store hard coded
+called "malware strings analyser" (MSA), and I use it to extract, sort and store hard-coded
 strings from a given malware binary into a database. Moreover, as seen previously, for each
 analysed malware, a table is created containing all strings sorted into their types (10 
 strings categories).
@@ -11,16 +11,16 @@ strings categories).
 Furthermore, this works as to be continued to populate a large database containing sorted
 strings of a maximum of binaries detected as malware.
 Simultaneously, another database, respecting the same structure as the previous one, has to
-be created. This database will store hard coded strings of not malicious binaries, by using
+be created. This database will store hard-coded strings of non malicious binaries, by using
 the malware string analyser script. The aim of this task is to create two distinct groups
-of extracted data from malicious and normal binary.
+of extracted data from malicious and benign binaries.
 
 The second step will be to extract and define patterns that represent a malicious binary,
 only by using their previously extracted and sorted strings. This can be performed in two
-manners: the supervised and unsupervised techniques. The difference between the both is that
+manners: by supervised and unsupervised techniques. The difference between the both is that
 the supervised techniques consist, in our case, to manually define which binary is or not
 a malware. Then, by using a machine learning algorithm such as the C4.5 (based on the ID3 
-algorithm) a decision tree has to be created in order to determine, for a given sample of
+algorithm) \cite{id3} a decision tree is to be created in order to determine, for a given sample of
 sorted strings, if a given binary has a certain percentage of chance to be malicious or not.
 
 In order to improve this decision tree, the definition of patterns and the usage of the 
@@ -28,11 +28,10 @@ machine learning algorithm steps have to be repeated in order to adjust the numb
 questions (nodes of the decision tree) that will generate the result.
 
 This decision tree will be used as a pre-analysis binary tool, allowing malware analysts
-to perform a first and fast prognosis of a given unknown binary.
+to perform a first and fast classification of a given unknown binary.
 This could be automated by using a honeypot that automatically collect, export malware
 binary and populate the malware strings databases by using the malware string analyser
 tools. Then, it could be possible to continuously update and improve the decision tree to 
 finally provide a web interface or an API. These user interfaces,
 could be based on the Virus Total model, allowing every malware researcher to submit their
-binary to evaluate approximatively the potential percentage of chance that a binary could
-be a malware.
+binary to evaluate the chance that a binary could be a malware.

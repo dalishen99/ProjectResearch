@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.30)  5 SEP 2016 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.6.30)  8 SEP 2016 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -333,16 +333,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \newpage
+l.20 \newpage
               [1]) (./structure/acknowledgements.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
 [2]) (./structure/table_of_content.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
@@ -382,14 +378,14 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
 
 [6]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -483,68 +479,403 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 ) (./sections/impl_and_conf.tex [9] [10]
-Overfull \hbox (7.61655pt too wide) in paragraph at lines 169--171
+<./images/human_activity_per_week.png, id=321, 602.25pt x 301.125pt>
+File: ./images/human_activity_per_week.png Graphic file (type png)
+
+<use ./images/human_activity_per_week.png>
+Package pdftex.def Info: ./images/human_activity_per_week.png used on input lin
+e 131.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/connections_per_ip_geo.png, id=322, 602.25pt x 301.125pt>
+File: ./images/connections_per_ip_geo.png Graphic file (type png)
+
+<use ./images/connections_per_ip_geo.png>
+Package pdftex.def Info: ./images/connections_per_ip_geo.png used on input line
+ 132.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 
+       <./images/human_activity_per_week.png (PNG copy)>]
+Overfull \hbox (7.61655pt too wide) in paragraph at lines 173--175
 []\OT1/cmr/m/n/10 IP ad-dresses: it is pos-si-ble to find hard coded IP ad-dres
 ses, with some-times a port num-ber (e.g. 93.174.89.143:23) 
  []
 
-[11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 214.
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.179   \item U
+               rl and files: it is possible to find strings that contain URL...
+ <./images/connections_per_ip_geo.png (PNG copy)>]
+<./images/msa_processing.png, id=345, 650.43pt x 209.78375pt>
+File: ./images/msa_processing.png Graphic file (type png)
+
+<use ./images/msa_processing.png>
+Package pdftex.def Info: ./images/msa_processing.png used on input line 201.
+(pdftex.def)             Requested size: 520.3447pt x 167.82721pt.
+
+Overfull \hbox (19.8607pt too wide) in paragraph at lines 201--201
+ [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 219.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 214.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 219.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 219.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 214.
- [12])
-(./sections/analysis_and_rslt.tex [13] [14]) (./sections/future_research.tex
-[15]) (./sections/concluding_disc.tex [16]) (./sections/bibliography.tex
-(./main.bbl
-Underfull \hbox (badness 2080) in paragraph at lines 4--8
-[]\OT1/cmr/m/n/10 An In-tro-duc-tion to Linux-based mal-ware (n.d.). [On-line].
- SANS In-sti-tute. Avail-able from: [][]$\OT1/cmtt/m/n/10 https :
- []
-
-) [17]) (./sections/appendices.tex)
-<./images/test.png, id=295, 639.38875pt x 223.83624pt>
-File: ./images/test.png Graphic file (type png)
- <use ./images/test.png>
-Package pdftex.def Info: ./images/test.png used on input line 66.
-(pdftex.def)             Requested size: 511.51169pt x 179.06923pt.
-
-Overfull \hbox (11.0277pt too wide) in paragraph at lines 66--66
- [] 
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 219.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.69 \end{document}
-                    <./images/test.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
+l.225 T
+       his first step enables the script to collect all readable strings. Af...
+ <./images/msa_processing.png>] [14]) (./sections/analysis_and_rslt.tex
+<./images/connections_per_ip.png, id=375, 602.25pt x 301.125pt>
+File: ./images/connections_per_ip.png Graphic file (type png)
+
+<use ./images/connections_per_ip.png>
+Package pdftex.def Info: ./images/connections_per_ip.png used on input line 15.
+
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/connections_per_country_pie.png, id=376, 602.25pt x 301.125pt>
+File: ./images/connections_per_country_pie.png Graphic file (type png)
+
+<use ./images/connections_per_country_pie.png>
+Package pdftex.def Info: ./images/connections_per_country_pie.png used on input
+ line 16.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.17 
+      <./images/connections_per_ip.png (PNG copy)>]
+<./images/top10_overall_input.png, id=382, 602.25pt x 301.125pt>
+File: ./images/top10_overall_input.png Graphic file (type png)
+
+<use ./images/top10_overall_input.png>
+Package pdftex.def Info: ./images/top10_overall_input.png used on input line 39
+.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.5}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 
+      <./images/connections_per_country_pie.png (PNG copy)>]
+<./images/success_ratio.png, id=387, 602.25pt x 301.125pt>
+File: ./images/success_ratio.png Graphic file (type png)
+
+<use ./images/success_ratio.png>
+Package pdftex.def Info: ./images/success_ratio.png used on input line 52.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 
+      <./images/top10_overall_input.png (PNG copy)> <./images/success_ratio.png
+ (PNG copy)>]
+<./images/top10_combinations_pie.png, id=393, 602.25pt x 301.125pt>
+File: ./images/top10_combinations_pie.png Graphic file (type png)
+
+<use ./images/top10_combinations_pie.png>
+Package pdftex.def Info: ./images/top10_combinations_pie.png used on input line
+ 64.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.103 
+       <./images/top10_combinations_pie.png (PNG copy)>]
+File: ./images/msa_processing.png Graphic file (type png)
+
+<use ./images/msa_processing.png>
+Package pdftex.def Info: ./images/msa_processing.png used on input line 113.
+(pdftex.def)             Requested size: 520.3447pt x 167.82721pt.
+
+Overfull \hbox (19.8607pt too wide) in paragraph at lines 113--113
+ [] 
+ []
+
+<./images/msa_vt_ip.png, id=400, 869.2475pt x 174.6525pt>
+File: ./images/msa_vt_ip.png Graphic file (type png)
+
+<use ./images/msa_vt_ip.png>
+Package pdftex.def Info: ./images/msa_vt_ip.png used on input line 136.
+(pdftex.def)             Requested size: 434.62268pt x 87.32603pt.
+) [19pdfTeX warning (ext4): destination with the same identifier (name{figure.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 ... research}{./sections/future_research.tex}
+                                                   % 424pdfTeX warning (ext4): 
+destination with the same identifier (name{figure.10}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 ... research}{./sections/future_research.tex}
+                                                   % 424 <./images/msa_vt_ip.pn
+g>] (./sections/future_research.tex) (./sections/concluding_disc.tex [20]
+[21]) (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+[]\OT1/cmr/m/n/10 micheloosterhof (2016). Mich-e-loost-er-hof/cowrie [On-line].
+ Avail-able from: [][]$\OT1/cmtt/m/n/10 https : / / github . com /
+ []
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no À in font cmr10!
+Missing character: There is no á in font cmr10!
+Missing character: There is no ≈ in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+[]\OT1/cmr/m/n/10 Monnappa, K. A. (n.d.). Au-tomat-ing Linux Mal-ware Anal-y-si
+s Us-ing Limon Sand-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+\OT1/cmr/m/n/10 box. [On-line]. Avail-able from: [][]$\OT1/cmtt/m/n/10 https : 
+/ / www . blackhat . com / docs / eu-[]15 / materials /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+\OT1/cmtt/m/n/10 eu-[]15-[]KA-[]Automating-[]Linux-[]Malware-[]Analysis-[]Using
+-[]Limon-[]Sandbox-[]wp . pdf$[][] \OT1/cmr/m/n/10 [Ac-cessed 19 June
+ []
+
+[22]
+Underfull \hbox (badness 4995) in paragraph at lines 114--116
+[]\OT1/cmr/m/n/10 ikoniaris (2016). Ikoniaris/kippo-graph [On-line]. Avail-able
+ from: [][]$\OT1/cmtt/m/n/10 https : / / github . com / ikoniaris /
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 126--130
+[]\OT1/cmr/m/n/10 Yann Fer-rere (2016). Fer-rery1/ProjectResearch Mal-ware Stri
+ngs An-a-lyzer [On-line]. Avail-able from:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
+[][]$\OT1/cmtt/m/n/10 https : / / github . com / ferrery1 / ProjectResearch / t
+ree / master / utils / malwareStringsAnalyzer$[][] \OT1/cmr/m/n/10 [Ac-
+ []
+
+) [23] (./sections/appendices.tex
+<./images/Overall_honeypot_activity.png, id=468, 912.40875pt x 223.83624pt>
+File: ./images/Overall_honeypot_activity.png Graphic file (type png)
+
+<use ./images/Overall_honeypot_activity.png>
+Package pdftex.def Info: ./images/Overall_honeypot_activity.png used on input l
+ine 2.
+(pdftex.def)             Requested size: 456.20326pt x 111.91785pt.
+
+<./images/Overall_post_compromise_activity.png, id=469, 920.43875pt x 212.795pt
+>
+File: ./images/Overall_post_compromise_activity.png Graphic file (type png)
+ <use ./images/Overall_post_compromise_activity.png>
+Package pdftex.def Info: ./images/Overall_post_compromise_activity.png used on 
+input line 3.
+(pdftex.def)             Requested size: 460.21825pt x 106.39723pt.
+
+<./images/top10_passwords.png, id=470, 602.25pt x 301.125pt>
+File: ./images/top10_passwords.png Graphic file (type png)
+
+<use ./images/top10_passwords.png>
+Package pdftex.def Info: ./images/top10_passwords.png used on input line 4.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/top10_usernames.png, id=471, 602.25pt x 301.125pt>
+File: ./images/top10_usernames.png Graphic file (type png)
+
+<use ./images/top10_usernames.png>
+Package pdftex.def Info: ./images/top10_usernames.png used on input line 5.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/most_successful_logins_per_day.png, id=472, 602.25pt x 301.125pt>
+File: ./images/most_successful_logins_per_day.png Graphic file (type png)
+
+<use ./images/most_successful_logins_per_day.png>
+Package pdftex.def Info: ./images/most_successful_logins_per_day.png used on in
+put line 6.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{figure.11
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 ...uccessful logins per day - Kippograph}{0.8}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.12}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 ...uccessful logins per day - Kippograph}{0.8}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.13}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 ...uccessful logins per day - Kippograph}{0.8}
+                                                   <./images/Overall_honeypot_a
+ctivity.png> <./images/Overall_post_compromise_activity.png> <./images/top10_pa
+sswords.png (PNG copy)>]
+<./images/successes_per_week.png, id=478, 602.25pt x 301.125pt>
+File: ./images/successes_per_week.png Graphic file (type png)
+
+<use ./images/successes_per_week.png>
+Package pdftex.def Info: ./images/successes_per_week.png used on input line 7.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/logins_from_same_ip.png, id=479, 602.25pt x 301.125pt>
+File: ./images/logins_from_same_ip.png Graphic file (type png)
+
+<use ./images/logins_from_same_ip.png>
+Package pdftex.def Info: ./images/logins_from_same_ip.png used on input line 8.
+
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 ...ns from same IP (TOP 20) - Kippograph}{0.8}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.15}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 ...ns from same IP (TOP 20) - Kippograph}{0.8}
+                                                   <./images/top10_usernames.pn
+g (PNG copy)> <./images/most_successful_logins_per_day.png (PNG copy)>]
+<./images/top10_ssh_clients.png, id=484, 602.25pt x 301.125pt>
+File: ./images/top10_ssh_clients.png Graphic file (type png)
+
+<use ./images/top10_ssh_clients.png>
+Package pdftex.def Info: ./images/top10_ssh_clients.png used on input line 9.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/top10_successful_input.png, id=485, 602.25pt x 301.125pt>
+File: ./images/top10_successful_input.png Graphic file (type png)
+
+<use ./images/top10_successful_input.png>
+Package pdftex.def Info: ./images/top10_successful_input.png used on input line
+ 10.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [26pdfTeX warning (ext4): destination with the same identifier (name{figure.16
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.10 ...Top 10 successful input - Kippograph}{0.8}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.17}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.10 ...Top 10 successful input - Kippograph}{0.8}
+                                                   <./images/successes_per_week
+.png (PNG copy)> <./images/logins_from_same_ip.png (PNG copy)>]
+<./images/top10_failed_input.png, id=490, 602.25pt x 301.125pt>
+File: ./images/top10_failed_input.png Graphic file (type png)
+
+<use ./images/top10_failed_input.png>
+Package pdftex.def Info: ./images/top10_failed_input.png used on input line 11.
+
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+
+<./images/connections_per_ip_geo_pie.png, id=491, 602.25pt x 301.125pt>
+File: ./images/connections_per_ip_geo_pie.png Graphic file (type png)
+
+<use ./images/connections_per_ip_geo_pie.png>
+Package pdftex.def Info: ./images/connections_per_ip_geo_pie.png used on input 
+line 12.
+(pdftex.def)             Requested size: 481.80064pt x 240.90031pt.
+ [27pdfTeX warning (ext4): destination with the same identifier (name{figure.18
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.12 ... per unique IP (Top 10) - Kippograph}{0.8}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.19}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.12 ... per unique IP (Top 10) - Kippograph}{0.8}
+                                                   <./images/top10_ssh_clients.
+png (PNG copy)> <./images/top10_successful_input.png (PNG copy)>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.20
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 \end{document}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.21}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 \end{document}
+                    <./images/top10_failed_input.png (PNG copy)> <./images/conn
+ections_per_ip_geo_pie.png (PNG copy)>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EBE4A2A3B00A26C671B13A49DA1F5206;2084.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 6571 strings out of 493029
- 96665 string characters out of 6136234
- 290677 words of memory out of 5000000
- 9917 multiletter control sequences out of 15000+600000
+ 6770 strings out of 493029
+ 101911 string characters out of 6136234
+ 295956 words of memory out of 5000000
+ 10041 multiletter control sequences out of 15000+600000
  6235 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,7n,30p,939b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -556,10 +887,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (19 pages, 182146 bytes).
+Output written on main.pdf (29 pages, 542708 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 499 compressed objects within 5 object streams
+ 157 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

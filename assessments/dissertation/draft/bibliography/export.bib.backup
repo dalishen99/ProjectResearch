@@ -1,0 +1,76 @@
+@misc{ubuntu,
+note = "Canonical. [Online]. Available from: \url{http://www.ubuntu.com/} [Accessed 7 September 2016]."
+}
+@misc{debian,
+note = "Debian. [Online]. Available from: \url{https://www.debian.org/} [Accessed 7 September 2016]."
+}
+@misc{paperOwnHoneypot,
+note = "R. Berthier, J. Arjona, M. Cukier (2009). Analyzing the process of installing rogue software. [Online]. Available from: IEEE Xplore. \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5270293}. [Accessed 5 March 2016]"
+}
+@misc{paperWithKippo,
+note = "Valli, C., Rabadia, P., Woodward, A. and Research Online (2015). Patterns and patter - an investigation into SSH activity using Kippo Honeypots. [Online]. Available from: \url{http://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1128&context=adf} [Accessed 19 June 2016]."
+}
+
+@misc{cowrie,
+note = "micheloosterhof (2016). Micheloosterhof/cowrie [Online]. Available from: \url{https://github.com/micheloosterhof/cowrie} [Accessed 7 September 2016]."
+}
+
+@misc{cve,
+note = "Common vulnerabilities and exposures (CVE) (1999). [Online]. Available from: \url{https://cve.mitre.org/} [Accessed 7 September 2016]."
+}
+
+@misc{paperHoneynetProj,
+note = "L. Spitzner (2003). The Honeynet Project: Trapping the Hackers. [Online]. Available from: IEEE Xplore.  \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1193207} [Accessed 5 March 2016]."
+}
+
+@misc{paperAnalyzingProcess,
+note = "R. Berthier, J. Arjona, M. Cukier (2009). Analyzing the process of installing rogue software. [Online]. Available from: IEEE Xplore. \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5270293}. [Accessed 5 March 2016]."
+}
+
+@misc{paperAnEmpirical,
+note = "G. Salles-Loustau, R. Berthier, E. Collange, B. Sobesto, M. Cukier (2011). Characterizing Attackers and Attacks: An Empirical Study. [Online].  Available from: IEEE Xplore. \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6133079}. [Accessed 5 March 2016]."
+}
+
+@misc{kojoney,
+note = "madirish (2015). Madirish/kojoney2 [Online]. Available from: \url{https://github.com/madirish/kojoney2} [Accessed 7 September 2016]."
+}
+
+@misc{vt,
+note = "Free online virus, Malware and URL scanner (n.d.). [Online]. Available from: \url{https://www.virustotal.com/} [Accessed 7 September 2016]."
+}
+
+@misc{paperIntroLinuxBased,
+note = "An Introduction to Linux-based malware (n.d.). [Online]. SANS Institute. Available from: \url{https://www.sans.org/reading-room/whitepapers/malicious/introduction-linux-based-malware-36097} [Accessed 19 June 2016]."
+}
+
+@misc{paperPsyBot,
+note = "LukášˇdurfinaJakub, Křoustek, P. and Zemek (n.d.). Psyb0t Malware: A step-by-step Decompilation case study. [Online]. Available from: \url{https://www.computer.org/csdl/proceedings/wcre/2013/9999/00/06671321.pdf} [Accessed 19 June 2016]."
+}
+
+@misc{paperLimon,
+note = "Monnappa, K. A. (n.d.). Automating Linux Malware Analysis Using Limon Sandbox. [Online]. Available from: \url{https://www.blackhat.com/docs/eu-15/materials/eu-15-KA-Automating-Linux-Malware-Analysis-Using-Limon-Sandbox-wp.pdf} [Accessed 19 June 2016]."
+}
+
+@misc{paperPackedMalware,
+note = "Yan, W., Zhang, Z. and Ansari, N. (2008). Revealing packed Malware. [Online]. IEEE. Available from: \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4639028} [Accessed 19 June 2016]."
+}
+
+@misc{paperHoneyDroid,
+note = "Mulliner, C., Liebergeld, S. and Lange, M. (2011). Poster: HoneyDroid -creating a Smartphone Honeypot. [Online]. Available from: \url{http://www.ieee-security.org/TC/SP2011/posters/HoneyDroid__Creating_a_Smart_Phone_Honeypot.pdf} [Accessed 7 September 2016]."
+}
+
+@misc{honeynetProject,
+note = "The Honeynet project (2016). [Online]. Available from: \url{https://www.honeynet.org/} [Accessed 7 September 2016]."
+}
+
+@misc{honeySnap,
+note = "honeynet (2010). Honeynet/honeysnap [Online]. Available from: \url{https://github.com/honeynet/honeysnap} [Accessed 7 September 2016]."
+}
+
+@misc{kippo,
+note = "desaster (2015). Desaster/kippo [Online]. Available from: \url{https://github.com/desaster/kippo} [Accessed 7 September 2016]."
+}
+
+@misc{tmp,
+note = ""
+}
